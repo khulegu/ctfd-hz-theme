@@ -23,6 +23,14 @@
               {{ form.password(class="form-control") }}
             </div>
 
+            <div class="mb-2">
+              <b>{{ form.country.label(class="mb-2") }}</b>
+              {{ form.country(class="form-select") }}
+              <small class="form-text text-muted">
+                {{ form.country.description }}
+              </small>
+            </div>
+
             {{ render_extra_fields(form.extra) }}
 
             <div class="row ">
