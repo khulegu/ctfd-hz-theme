@@ -1,0 +1,24 @@
+/* Challenge styles
+-------------------------------------------------- */
+
+.challenge-desc {
+  overflow-wrap: anywhere;
+
+  img {
+    max-width: 100%;
+  }
+}
+
+.challenge-button {
+  border-radius: 0;
+}
+
+.challenge-solved {
+  background-color: #37d63e !important;
+  opacity: 0.6;
+  border: none;
+}
+
+.challenge-inner p {
+  font-weight: 700;
+}
