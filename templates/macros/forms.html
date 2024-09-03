@@ -29,7 +29,7 @@
     {% elif field.field_type == "boolean" %}
 
       <div>
-        {{ field.label(class="form-label") }}
+        <b>{{ field.label(class="form-label") }}</b>
         {% if show_optionals %}
           {% if field.flags.required is false %}
             <small class="ms-1 text-muted">
