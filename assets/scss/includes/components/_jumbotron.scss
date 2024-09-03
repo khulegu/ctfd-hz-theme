@@ -8,16 +8,14 @@ main {
 
 .jumbotron {
   padding: 2rem 1rem;
-  margin-bottom: 2rem;
   text-align: center;
-
-  background-color: var(--bs-dark);
+  background-color: var(--bs-body-bg);
   color: var(--bs-white);
 }
 
 @media (min-width: 576px) {
   .jumbotron {
-    padding: 4rem 2rem;
+    padding: 1rem 2rem;
   }
 }
 

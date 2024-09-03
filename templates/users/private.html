@@ -8,7 +8,7 @@
       {% if user.team_id %}
         <h2>
           <a href="{{ url_for('teams.public', team_id=user.team_id) }}">
-						<span class="badge bg-secondary">
+						<span class="badge text-bg-secondary">
 							{{ user.team.name }}
 						</span>
           </a>
@@ -18,19 +18,19 @@
       <div class="pt-2">
         {% if user.oauth_id %}
           <a href="https://majorleaguecyber.org/u/{{ user.name }}">
-            <h3 class="d-inline-block mx-1"><span class="badge rounded-pill bg-primary">{% trans %}Official{% endtrans %}</span></h3>
+            <h3 class="d-inline-block mx-1"><span class="badge rounded-pill text-bg-primary">{% trans %}Official{% endtrans %}</span></h3>
           </a>
         {% endif %}
 
         {% if user.affiliation %}
           <h3 class="d-inline-block mx-1">
-            <span class="badge rounded-pill bg-primary">{{ user.affiliation }}</span>
+            <span class="badge rounded-pill text-bg-primary">{{ user.affiliation }}</span>
           </h3>
         {% endif %}
 
         {% if user.country %}
           <h3 class="d-inline-block mx-1">
-            <span class="badge rounded-pill bg-primary">
+            <span class="badge rounded-pill text-bg-primary">
                 <i class="flag-{{ user.country.lower() }}"></i>
                 {{ lookup_country_code(user.country) }}
             </span>

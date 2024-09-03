@@ -11,11 +11,12 @@
 
 .challenge-button {
   border-radius: 0;
+  border: 1px solid white;
 }
 
 .challenge-solved {
-  background-color: #37d63e !important;
-  opacity: 0.6;
+  background-color: #2de45b !important;
+  color: black;
   border: none;
 }
 

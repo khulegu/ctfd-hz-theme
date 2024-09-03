@@ -1,6 +1,13 @@
 @use "bootstrap/scss/bootstrap" as * with (
   $info: #5c728f,
-  $dark: #000000
+  $dark: #000000,
+  $gray-900: #101010,
+  $primary: #2de45b,
+  $border-radius: 0,
+  $border-radius-lg: 0,
+  $border-radius-sm: 0,
+  $border-radius-xl: 0,
+  $border-radius-xxl: 0,
 );
 
 @use "includes/components/table";
@@ -25,7 +32,7 @@ h2 {
 }
 
 a {
-  color: #337ab7;
+  color: #2de45b;
   text-decoration: none !important;
 }
 
@@ -72,7 +79,7 @@ blockquote {
 
 .form-control {
   padding: 0.8em !important;
-  background: #f0f0f0;
+  background: #050505;
   color: #aaa;
   /* Behavior changed in Bootstrap v4.1.3. See https://github.com/twbs/bootstrap/issues/27629 */
   height: auto !important;
