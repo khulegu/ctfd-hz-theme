@@ -50,7 +50,12 @@
                     <span class="badge bg-secondary ms-2" x-text="standing.bracket_name"></span>
                   </template>
                 </td>
-                <td x-text="standing.country"></td>
+                <td>
+                  <template x-if="standing.country">
+                    <i :class="'flag-' + standing.country.toLowerCase()"></i>
+                    <span x-text="standing.countr_name"></span>
+                  </template>
+                </td>
                 <td x-text="standing.score"></td>
               </tr>
             </template>
