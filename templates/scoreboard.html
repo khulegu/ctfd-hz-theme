@@ -35,6 +35,7 @@
           <tr>
             <td style="width: 10px"><b>{% trans %}Place{% endtrans %}</b></td>
             <td><b>{{ get_mode_as_word(capitalize=True) }}</b></td>
+            <td><b>{% trans %}Country{% endtrans %}</b></td>
             <td><b>{% trans %}Score{% endtrans %}</b></td>
           </tr>
           </thead>
@@ -49,6 +50,7 @@
                     <span class="badge bg-secondary ms-2" x-text="standing.bracket_name"></span>
                   </template>
                 </td>
+                <td x-text="standing.country"></td>
                 <td x-text="standing.score"></td>
               </tr>
             </template>
