@@ -53,8 +53,8 @@
                 <td>
                   <template x-if="standing.country">
                     <i :class="'flag-' + standing.country.toLowerCase()"></i>
-                    <span x-text="standing.country_name"></span>
                   </template>
+                  <span x-text="standing.country_name"></span>
                 </td>
                 <td x-text="standing.score"></td>
               </tr>
